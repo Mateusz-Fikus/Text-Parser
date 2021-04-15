@@ -59,7 +59,7 @@ class Parse(Backup):
                 for line in lines:
                     if line.startswith(self.case):
                         #Zamienia wszystkie tabulatory / spacje na początku linijki do momentu aż
-                        #nie natrafi na sprzeczny znak z parametru --from
+                        #nie natrafi na znak sprzeczny z podanym parametrem --from
                         for i in range(0, len(line)):
                             if line[i] == self.case:
                                 occur += 1
